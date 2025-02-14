@@ -123,11 +123,11 @@
 				<div class="row w-100 align-items-center gx-lg-2 gx-0">
 					<div class="col-xxl-2 col-lg-3 col-md-6 col-5">
 						<a class="navbar-brand d-none d-lg-block" href="../index.html">
-							<img src="../assets/images/logo/freshcart-logo.svg" alt="eCommerce HTML Template" />
+							<img src="../assets/images/logo/ball.png" width="20" alt="eCommerce HTML Template" /><strong>&nbsp;Now Futsal</strong>
 						</a>
 						<div class="d-flex justify-content-between w-100 d-lg-none">
 							<a class="navbar-brand" href="../index.html">
-								<img src="../assets/images/logo/freshcart-logo.svg" alt="eCommerce HTML Template" />
+								<img src="../assets/images/logo/ball.png" width="20" alt="eCommerce HTML Template" /><strong>&nbsp;Now Futsal</strong>
 							</a>
 						</div>
 					</div>
@@ -260,7 +260,7 @@
 								</button>
 							</div>
 						</div>
-						<div class="d-block d-lg-none mb-4">
+						<!-- <div class="d-block d-lg-none mb-4">
 							<a class="btn btn-primary w-100 d-flex justify-content-center align-items-center"
 								data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
 								aria-controls="collapseExample">
@@ -296,8 +296,8 @@
 									</ul>
 								</div>
 							</div>
-						</div>
-						<div class="dropdown me-3 d-none d-lg-block">
+						</div> -->
+						<!-- <div class="dropdown me-3 d-none d-lg-block">
 							<button class="btn btn-primary px-6" type="button" id="dropdownMenuButton1"
 								data-bs-toggle="dropdown" aria-expanded="false">
 								<span class="me-1">
@@ -324,21 +324,28 @@
 								<li><a class="dropdown-item" href="../pages/shop-grid.html">Chicken, Meat & Fish</a>
 								</li>
 							</ul>
-						</div>
+						</div> -->
 						<div>
 							<ul class="navbar-nav align-items-center">
-								<li class="nav-item dropdown w-100 w-lg-auto">
-									<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+								<li class="nav-item  w-100 w-lg-auto">
+									<a class="nav-link -toggle" href="../index.html" role="button" 
 										aria-expanded="false">Home</a>
-									<ul class="dropdown-menu">
-										<li><a class="dropdown-item" href="../index.html">Home 1</a></li>
-										<li><a class="dropdown-item" href="../pages/index-2.html">Home 2</a></li>
-										<li><a class="dropdown-item" href="../pages/index-3.html">Home 3</a></li>
-										<li><a class="dropdown-item" href="../pages/index-4.html">Home 4</a></li>
-										<li>
-											<a class="dropdown-item" href="../pages/index-5.html">Home 5</a>
-										</li>
-									</ul>
+									
+								</li>
+								<li class="nav-item  w-100 w-lg-auto">
+									<a class="nav-link toggle" href="#" role="button" 
+										aria-expanded="false">구장예약하기</a>
+									
+								</li>
+								<li class="nav-item  w-100 w-lg-auto">
+									<a class="nav-link toggle" href="#" role="button" 
+										aria-expanded="false">소셜 매치</a>
+									
+								</li>
+								<li class="nav-item  w-100 w-lg-auto">
+									<a class="nav-link toggle" href="#" role="button" 
+										aria-expanded="false">공지사항</a>
+									
 								</li>
 								<li class="nav-item dropdown w-100 w-lg-auto">
 									<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -461,20 +468,24 @@
 								</li>
 								<li class="nav-item dropdown w-100 w-lg-auto">
 									<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-										aria-expanded="false">Account</a>
+										aria-expanded="false">계정</a>
 									<ul class="dropdown-menu">
-										<li><a class="dropdown-item" href="../pages/signin.html">Sign in</a></li>
-										<li><a class="dropdown-item" href="../pages/signup.html">Signup</a></li>
-										<li><a class="dropdown-item" href="../pages/forgot-password.html">Forgot
-												Password</a></li>
+										<li><a class="dropdown-item" href="../pages/signin.html">로그인</a></li>
+										<li><a class="dropdown-item" href="../pages/signup.html">가입하기</a></li>
+										<li><a class="dropdown-item" href="../pages/forgot-password.html">비밀번호 찾기
+												</a></li>
 										<li class="dropdown-submenu dropend">
 											<a class="dropdown-item dropdown-list-group-item dropdown-toggle"
-												href="#">My Account</a>
+												href="#">내계정</a>
 											<ul class="dropdown-menu">
 												<li><a class="dropdown-item"
-														href="../pages/account-orders.html">Orders</a></li>
+													href="../pages/account-orders.html">예약내역</a></li>
 												<li><a class="dropdown-item"
-														href="../pages/account-settings.html">Settings</a></li>
+													href="../pages/account-settings(계정설정).html">계정 설정</a></li>
+												<li><a class="dropdown-item"
+													href="../pages/account- change(비번).html">비밀번호 변경</a></li>
+												<li><a class="dropdown-item"
+													href="../pages/account-cancellation(계정 탈퇴).html">계정 탈퇴</a></li>	
 												<li><a class="dropdown-item"
 														href="../pages/account-address.html">Address</a></li>
 												<li><a class="dropdown-item"
@@ -1001,18 +1012,30 @@
 							<ul class="nav flex-column nav-pills nav-pills-dark">
 								<!-- nav item -->
 								<li class="nav-item">
-									<a class="nav-link active" aria-current="page" href="account-orders.html">
+									<a class="nav-link " aria-current="page" href="account-orders.html">
 										<i class="feather-icon icon-shopping-bag me-2"></i>
-										Your Orders
+										예약내역
 									</a>
 								</li>
-								<!-- nav item -->
 								<li class="nav-item">
-									<a class="nav-link" href="account-settings.html">
+									<a class="nav-link " href="account-settings(계정설정).html">
 										<i class="feather-icon icon-settings me-2"></i>
-										Settings
+										계정설정
 									</a>
 								</li>
+								<li class="nav-item">
+									<a class="nav-link " href="account- change(비번).html">
+										<i class="feather-icon icon-settings me-2"></i>
+										비밀번호 변경
+									</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link " href="account-cancellation(계정 탈퇴).html">
+										<i class="feather-icon icon-settings me-2"></i>
+										계정 탈퇴
+									</a>
+								</li>
+								
 								<!-- nav item -->
 								<li class="nav-item">
 									<a class="nav-link" href="account-address.html">
@@ -1042,7 +1065,7 @@
 								<li class="nav-item">
 									<a class="nav-link" href="../index.html">
 										<i class="feather-icon icon-log-out me-2"></i>
-										Log out
+										로그아웃
 									</a>
 								</li>
 							</ul>
@@ -1051,7 +1074,7 @@
 					<div class="col-lg-9 col-md-8 col-12">
 						<div class="py-6 p-md-6 p-lg-10">
 							<!-- heading -->
-							<h2 class="mb-6">Your Orders</h2>
+							<h2 class="mb-6">예약내역</h2>
 
 							<div class="table-responsive-xxl border-0">
 								<!-- Table -->
@@ -1251,9 +1274,27 @@
 			<ul class="nav flex-column nav-pills nav-pills-dark">
 				<!-- nav item -->
 				<li class="nav-item">
-					<a class="nav-link active" aria-current="page" href="account-orders.html">
+					<a class="nav-link " aria-current="page" href="account-orders.html">
 						<i class="feather-icon icon-shopping-bag me-2"></i>
-						Your Orders
+						예약내역
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link " href="account-settings(계정설정).html">
+						<i class="feather-icon icon-settings me-2"></i>
+						계정설정
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link " href="account- change(비번).html">
+						<i class="feather-icon icon-settings me-2"></i>
+						비밀번호 변경
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link " href="account-cancellation(계정 탈퇴).html">
+						<i class="feather-icon icon-settings me-2"></i>
+						계정 탈퇴
 					</a>
 				</li>
 				<!-- nav item -->
@@ -1293,7 +1334,7 @@
 					<li class="nav-item">
 						<a class="nav-link" href="../index.html">
 							<i class="feather-icon icon-log-out me-2"></i>
-							Log out
+							로그아웃
 						</a>
 					</li>
 				</ul>
@@ -1306,88 +1347,9 @@
 	<footer class="footer">
 		<div class="container">
 			<div class="row g-4 py-4">
-				<div class="col-12 col-md-12 col-lg-4">
-					<h6 class="mb-4">Categories</h6>
-					<div class="row">
-						<div class="col-6">
-							<!-- list -->
-							<ul class="nav flex-column">
-								<li class="nav-item mb-2"><a href="#!" class="nav-link">Vegetables & Fruits</a></li>
-								<li class="nav-item mb-2"><a href="#!" class="nav-link"> Breakfast & instant food</a>
-								</li>
-								<li class="nav-item mb-2"><a href="#!" class="nav-link"> Bakery & Biscuits</a></li>
-								<li class="nav-item mb-2"><a href="#!" class="nav-link">Atta, rice & dal</a></li>
-								<li class="nav-item mb-2"><a href="#!" class="nav-link">Sauces & spreads</a></li>
-								<li class="nav-item mb-2"><a href="#!" class="nav-link">Organic & gourmet</a></li>
-								<li class="nav-item mb-2"><a href="#!" class="nav-link"> Baby care</a></li>
-								<li class="nav-item mb-2"><a href="#!" class="nav-link">Cleaning essentials</a></li>
-								<li class="nav-item mb-2"><a href="#!" class="nav-link">Personal care</a></li>
-							</ul>
-						</div>
-						<div class="col-6">
-							<!-- list -->
-							<ul class="nav flex-column">
-								<li class="nav-item mb-2"><a href="#!" class="nav-link">Dairy, bread & eggs</a></li>
-								<li class="nav-item mb-2"><a href="#!" class="nav-link"> Cold drinks & juices</a></li>
-								<li class="nav-item mb-2"><a href="#!" class="nav-link"> Tea, coffee & drinks</a></li>
-								<li class="nav-item mb-2"><a href="#!" class="nav-link">Masala, oil & more</a></li>
-								<li class="nav-item mb-2"><a href="#!" class="nav-link">Chicken, meat & fish</a></li>
-								<li class="nav-item mb-2"><a href="#!" class="nav-link">Paan corner</a></li>
-								<li class="nav-item mb-2"><a href="#!" class="nav-link"> Pharma & wellness</a></li>
-								<li class="nav-item mb-2"><a href="#!" class="nav-link">Home & office</a></li>
-								<li class="nav-item mb-2"><a href="#!" class="nav-link">Pet care</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
+				
 				<div class="col-12 col-md-12 col-lg-8">
-					<div class="row g-4">
-						<div class="col-6 col-sm-6 col-md-3">
-							<h6 class="mb-4">Get to know us</h6>
-							<!-- list -->
-							<ul class="nav flex-column">
-								<li class="nav-item mb-2"><a href="#!" class="nav-link">Company</a></li>
-								<li class="nav-item mb-2"><a href="#!" class="nav-link">About</a></li>
-								<li class="nav-item mb-2"><a href="#1" class="nav-link">Blog</a></li>
-								<li class="nav-item mb-2"><a href="#!" class="nav-link">Help Center</a></li>
-								<li class="nav-item mb-2"><a href="#!" class="nav-link">Our Value</a></li>
-							</ul>
-						</div>
-						<div class="col-6 col-sm-6 col-md-3">
-							<h6 class="mb-4">For Consumers</h6>
-							<ul class="nav flex-column">
-								<!-- list -->
-								<li class="nav-item mb-2"><a href="#!" class="nav-link">Payments</a></li>
-								<li class="nav-item mb-2"><a href="#!" class="nav-link">Shipping</a></li>
-								<li class="nav-item mb-2"><a href="#!" class="nav-link">Product Returns</a></li>
-								<li class="nav-item mb-2"><a href="#!" class="nav-link">FAQ</a></li>
-								<li class="nav-item mb-2"><a href="../pages/shop-checkout.html" class="nav-link">Shop
-										Checkout</a></li>
-							</ul>
-						</div>
-						<div class="col-6 col-sm-6 col-md-3">
-							<h6 class="mb-4">Become a Shopper</h6>
-							<ul class="nav flex-column">
-								<!-- list -->
-								<li class="nav-item mb-2"><a href="#!" class="nav-link">Shopper Opportunities</a></li>
-								<li class="nav-item mb-2"><a href="#!" class="nav-link">Become a Shopper</a></li>
-								<li class="nav-item mb-2"><a href="#!" class="nav-link">Earnings</a></li>
-								<li class="nav-item mb-2"><a href="#!" class="nav-link">Ideas & Guides</a></li>
-								<li class="nav-item mb-2"><a href="#!" class="nav-link">New Retailers</a></li>
-							</ul>
-						</div>
-						<div class="col-6 col-sm-6 col-md-3">
-							<h6 class="mb-4">Freshcart programs</h6>
-							<ul class="nav flex-column">
-								<!-- list -->
-								<li class="nav-item mb-2"><a href="#!" class="nav-link">Freshcart programs</a></li>
-								<li class="nav-item mb-2"><a href="#!" class="nav-link">Gift Cards</a></li>
-								<li class="nav-item mb-2"><a href="#!" class="nav-link">Promos & Coupons</a></li>
-								<li class="nav-item mb-2"><a href="#!" class="nav-link">Freshcart Ads</a></li>
-								<li class="nav-item mb-2"><a href="#!" class="nav-link">Careers</a></li>
-							</ul>
-						</div>
-					</div>
+					
 				</div>
 			</div>
 			<div class="border-top py-4">
@@ -1430,10 +1392,10 @@
 			</div>
 			<div class="border-top py-4">
 				<div class="row align-items-center">
-					<div class="col-md-6"><span class="small text-muted">© 2022 <span id="copyright"> -
+					<!-- <div class="col-md-6"><span class="small text-muted">© 2022 <span id="copyright"> -
 								<script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
 							</span>FreshCart eCommerce HTML Template. All rights reserved. Powered by <a
-								href="https://codescandy.com/">Codescandy</a>.</span></div>
+								href="https://codescandy.com/">Codescandy</a>.</span></div> -->
 					<div class="col-md-6">
 						<ul class="list-inline text-md-end mb-0 small mt-3 mt-md-0">
 							<li class="list-inline-item text-muted">Follow us on</li>
