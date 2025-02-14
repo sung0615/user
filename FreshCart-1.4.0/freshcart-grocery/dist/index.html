@@ -342,6 +342,11 @@
 								</li>
 								<li class="nav-item  w-100 w-lg-auto">
 									<a class="nav-link toggle" href="#" role="button" 
+										aria-expanded="false">소셜 매치</a>
+									
+								</li>
+								<li class="nav-item  w-100 w-lg-auto">
+									<a class="nav-link toggle" href="#" role="button" 
 										aria-expanded="false">공지사항</a>
 									
 								</li>
@@ -460,7 +465,7 @@
 								</li>
 								<li class="nav-item dropdown w-100 w-lg-auto">
 									<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-										aria-expanded="false">Account</a>
+										aria-expanded="false">계정</a>
 									<ul class="dropdown-menu">
 										<li><a class="dropdown-item" href="./pages/signin.html">Sign in</a></li>
 										<li><a class="dropdown-item" href="./pages/signup.html">Signup</a></li>
@@ -473,7 +478,11 @@
 												<li><a class="dropdown-item"
 														href="./pages/account-orders.html">Orders</a></li>
 												<li><a class="dropdown-item"
-														href="./pages/account-settings.html">계정설정</a></li>
+														href="./pages/account-settings(계정설정).html">계정 설정</a></li>
+												<li><a class="dropdown-item"
+														href="./pages/account- change(비번).html">비밀번호 변경</a></li>
+												<li><a class="dropdown-item"
+														href="./pages/account-cancellation(계정 탈퇴).html">계정 탈퇴</a></li>
 												<li><a class="dropdown-item"
 														href="./pages/account-address.html">Address</a></li>
 												<li><a class="dropdown-item"
@@ -978,34 +987,39 @@
 		<section class="mt-8">
 			<div class="container">
 				<div class="hero-slider">
+					
 					<div
-						style="background: url(./assets/images/slider/slide-1.jpg) no-repeat; background-size: cover; border-radius: 0.5rem; background-position: center">
+						style="background: url(./assets/images/slider/잔디\ 공.jpg) no-repeat; background-size: cover; border-radius: 0.5rem; background-position: center">
 						<div class="ps-lg-12 py-lg-16 col-xxl-5 col-md-7 py-14 px-8 text-xs-center">
-							<span class="badge text-bg-warning">Opening Sale Discount 50%</span>
-
-							<h2 class="text-dark display-5 fw-bold mt-4">SuperMarket For Fresh Grocery</h2>
-							<p class="lead">Introduced a new model for online grocery shopping and convenient home
-								delivery.</p>
+							<!-- <span class="badge text-bg-warning">Free Shipping - orders over $100</span> -->
+							<h2 class="text-dark display-5 fw-bold mt-4">
+								<!-- Free Shipping on
+								<br />
+								orders over -->
+								<span class="text-primary">실시간 예약 현황</span>
+							</h2>
+							<!-- <p class="lead">Free Shipping to First-Time Customers Only, After promotions and discounts
+								are applied.</p> -->
 							<a href="#!" class="btn btn-dark mt-3">
-								Shop Now
+								예약하기
 								<i class="feather-icon icon-arrow-right ms-1"></i>
 							</a>
 						</div>
 					</div>
 					<div
-						style="background: url(./assets/images/slider/slider-2.jpg) no-repeat; background-size: cover; border-radius: 0.5rem; background-position: center">
+						style="background: url(./assets/images/slider/pusel.jpg) no-repeat; background-size: cover; border-radius: 0.5rem; background-position: center">
 						<div class="ps-lg-12 py-lg-16 col-xxl-5 col-md-7 py-14 px-8 text-xs-center">
-							<span class="badge text-bg-warning">Free Shipping - orders over $100</span>
+							<!-- <span class="badge text-bg-warning">Free Shipping - orders over $100</span> -->
 							<h2 class="text-dark display-5 fw-bold mt-4">
-								Free Shipping on
+								<!-- Free Shipping on
 								<br />
-								orders over
-								<span class="text-primary">$100</span>
+								orders over -->
+								<span class="text-primary">매칭 시스템</span>
 							</h2>
-							<p class="lead">Free Shipping to First-Time Customers Only, After promotions and discounts
-								are applied.</p>
+							<!-- <p class="lead">Free Shipping to First-Time Customers Only, After promotions and discounts
+								are applied.</p> -->
 							<a href="#!" class="btn btn-dark mt-3">
-								Shop Now
+								소셜 매치
 								<i class="feather-icon icon-arrow-right ms-1"></i>
 							</a>
 						</div>
@@ -2180,89 +2194,8 @@
 	<footer class="footer">
 		<div class="container">
 			<div class="row g-4 py-4">
-				<div class="col-12 col-md-12 col-lg-4">
-					<h6 class="mb-4">Categories</h6>
-					<div class="row">
-						<div class="col-6">
-							<!-- list -->
-							<ul class="nav flex-column">
-								<li class="nav-item mb-2"><a href="#!" class="nav-link">Vegetables & Fruits</a></li>
-								<li class="nav-item mb-2"><a href="#!" class="nav-link"> Breakfast & instant food</a>
-								</li>
-								<li class="nav-item mb-2"><a href="#!" class="nav-link"> Bakery & Biscuits</a></li>
-								<li class="nav-item mb-2"><a href="#!" class="nav-link">Atta, rice & dal</a></li>
-								<li class="nav-item mb-2"><a href="#!" class="nav-link">Sauces & spreads</a></li>
-								<li class="nav-item mb-2"><a href="#!" class="nav-link">Organic & gourmet</a></li>
-								<li class="nav-item mb-2"><a href="#!" class="nav-link"> Baby care</a></li>
-								<li class="nav-item mb-2"><a href="#!" class="nav-link">Cleaning essentials</a></li>
-								<li class="nav-item mb-2"><a href="#!" class="nav-link">Personal care</a></li>
-							</ul>
-						</div>
-						<div class="col-6">
-							<!-- list -->
-							<ul class="nav flex-column">
-								<li class="nav-item mb-2"><a href="#!" class="nav-link">Dairy, bread & eggs</a></li>
-								<li class="nav-item mb-2"><a href="#!" class="nav-link"> Cold drinks & juices</a></li>
-								<li class="nav-item mb-2"><a href="#!" class="nav-link"> Tea, coffee & drinks</a></li>
-								<li class="nav-item mb-2"><a href="#!" class="nav-link">Masala, oil & more</a></li>
-								<li class="nav-item mb-2"><a href="#!" class="nav-link">Chicken, meat & fish</a></li>
-								<li class="nav-item mb-2"><a href="#!" class="nav-link">Paan corner</a></li>
-								<li class="nav-item mb-2"><a href="#!" class="nav-link"> Pharma & wellness</a></li>
-								<li class="nav-item mb-2"><a href="#!" class="nav-link">Home & office</a></li>
-								<li class="nav-item mb-2"><a href="#!" class="nav-link">Pet care</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-12 col-md-12 col-lg-8">
-					<div class="row g-4">
-						<div class="col-6 col-sm-6 col-md-3">
-							<h6 class="mb-4">Get to know us</h6>
-							<!-- list -->
-							<ul class="nav flex-column">
-								<li class="nav-item mb-2"><a href="#!" class="nav-link">Company</a></li>
-								<li class="nav-item mb-2"><a href="#!" class="nav-link">About</a></li>
-								<li class="nav-item mb-2"><a href="#1" class="nav-link">Blog</a></li>
-								<li class="nav-item mb-2"><a href="#!" class="nav-link">Help Center</a></li>
-								<li class="nav-item mb-2"><a href="#!" class="nav-link">Our Value</a></li>
-							</ul>
-						</div>
-						<div class="col-6 col-sm-6 col-md-3">
-							<h6 class="mb-4">For Consumers</h6>
-							<ul class="nav flex-column">
-								<!-- list -->
-								<li class="nav-item mb-2"><a href="#!" class="nav-link">Payments</a></li>
-								<li class="nav-item mb-2"><a href="#!" class="nav-link">Shipping</a></li>
-								<li class="nav-item mb-2"><a href="#!" class="nav-link">Product Returns</a></li>
-								<li class="nav-item mb-2"><a href="#!" class="nav-link">FAQ</a></li>
-								<li class="nav-item mb-2"><a href="./pages/shop-checkout.html" class="nav-link">Shop
-										Checkout</a></li>
-							</ul>
-						</div>
-						<div class="col-6 col-sm-6 col-md-3">
-							<h6 class="mb-4">Become a Shopper</h6>
-							<ul class="nav flex-column">
-								<!-- list -->
-								<li class="nav-item mb-2"><a href="#!" class="nav-link">Shopper Opportunities</a></li>
-								<li class="nav-item mb-2"><a href="#!" class="nav-link">Become a Shopper</a></li>
-								<li class="nav-item mb-2"><a href="#!" class="nav-link">Earnings</a></li>
-								<li class="nav-item mb-2"><a href="#!" class="nav-link">Ideas & Guides</a></li>
-								<li class="nav-item mb-2"><a href="#!" class="nav-link">New Retailers</a></li>
-							</ul>
-						</div>
-						<div class="col-6 col-sm-6 col-md-3">
-							<h6 class="mb-4">Freshcart programs</h6>
-							<ul class="nav flex-column">
-								<!-- list -->
-								<li class="nav-item mb-2"><a href="#!" class="nav-link">Freshcart programs</a></li>
-								<li class="nav-item mb-2"><a href="#!" class="nav-link">Gift Cards</a></li>
-								<li class="nav-item mb-2"><a href="#!" class="nav-link">Promos & Coupons</a></li>
-								<li class="nav-item mb-2"><a href="#!" class="nav-link">Freshcart Ads</a></li>
-								<li class="nav-item mb-2"><a href="#!" class="nav-link">Careers</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
+				
+				
 			</div>
 			<div class="border-top py-4">
 				<div class="row align-items-center">
@@ -2304,10 +2237,10 @@
 			</div>
 			<div class="border-top py-4">
 				<div class="row align-items-center">
-					<div class="col-md-6"><span class="small text-muted">© 2022 <span id="copyright"> -
+					<!-- <div class="col-md-6"><span class="small text-muted">© 2022 <span id="copyright"> -
 								<script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
 							</span>FreshCart eCommerce HTML Template. All rights reserved. Powered by <a
-								href="https://codescandy.com/">Codescandy</a>.</span></div>
+								href="https://codescandy.com/">Codescandy</a>.</span></div> -->
 					<div class="col-md-6">
 						<ul class="list-inline text-md-end mb-0 small mt-3 mt-md-0">
 							<li class="list-inline-item text-muted">Follow us on</li>

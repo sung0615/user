@@ -68,7 +68,7 @@
                 <div class="col-4">
                   <!-- input -->
                   <label for="gender" class="form-label visually-hidden">성별</label>
-                  <select type="" class="form-select" id="gender"  >
+                  <select type="" class="form-select" id="gender"  required>
                     <option selected disabled value="">성별</option>
                     <option>남자</option>
                     <option>여자</option>
@@ -81,7 +81,7 @@
                 <div class="col-4">
                   <!-- input -->
                   <label for="newsagency" class="form-label visually-hidden">통신사</label>
-                  <select type="" class="form-select" id="newsagency"  >
+                  <select type="" class="form-select" id="newsagency" required >
                     <option selected disabled value="">통신사</option>
                     <option>KT</option>
                     <option>SKT</option>
@@ -98,23 +98,11 @@
                   <input type="tel" class="form-control" id="phonenumber" placeholder="휴대폰" required />
                   <div class="invalid-feedback">휴대폰 번호를 입력해주세요</div>
                 </div>
-                <div class="col-4">
+                
+                <div class="col-12">
                   <!-- input -->
-                  <label for="newsagency" class="form-label visually-hidden">음력,양력</label>
-                  <select type="" class="form-select" id="newsagency"  >
-                    <option selected disabled value="">음력,양력 선택</option>
-                    <option>음력</option>
-                    <option>양력</option>
-                    
-                  </select>
-
-                  <div class="invalid-feedback">음력, 양력을 선택해주세요
-                  </div>
-                </div>
-                <div class="col-8">
-                  <!-- input -->
-                  <label for="dob" class="form-label visually-hidden">생년월일일</label>
-                  <input type="tel" class="form-control" id="dob" placeholder="yyyy/mm/dd" required />
+                  <label for="dob" class="form-label visually-hidden">생년월일</label>
+                  <input type="date" class="form-control" id="dob" placeholder="yyyy/mm/dd" required />
                   <div class="invalid-feedback">생년월일을 입력해주세요</div>
                 </div>
                 <div class="col-12">

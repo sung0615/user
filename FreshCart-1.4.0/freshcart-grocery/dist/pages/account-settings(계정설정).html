@@ -339,6 +339,11 @@
 								</li>
 								<li class="nav-item  w-100 w-lg-auto">
 									<a class="nav-link toggle" href="#" role="button" 
+										aria-expanded="false">소셜 매치</a>
+									
+								</li>
+								<li class="nav-item  w-100 w-lg-auto">
+									<a class="nav-link toggle" href="#" role="button" 
 										aria-expanded="false">공지사항</a>
 									
 								</li>
@@ -476,7 +481,11 @@
 												<li><a class="dropdown-item"
 														href="../pages/account-orders.html">Orders</a></li>
 												<li><a class="dropdown-item"
-														href="../pages/account-settings.html">계정설정</a></li>
+														href="../pages/account-settings.html">계정 설정</a></li>
+												<li><a class="dropdown-item"
+														href="../pages/account- change.html">비밀번호 변경</a></li>
+												<li><a class="dropdown-item"
+														href="../pages/account-cancellation.html">계정 탈퇴</a></li>
 												<li><a class="dropdown-item"
 														href="../pages/account-address.html">Address</a></li>
 												<li><a class="dropdown-item"
@@ -1010,9 +1019,21 @@
 								</li>
 								<!-- nav item -->
 								<li class="nav-item">
-									<a class="nav-link active" href="account-settings.html">
+									<a class="nav-link " href="account-settings(계정설정).html">
 										<i class="feather-icon icon-settings me-2"></i>
 										계정설정
+									</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link " href="account- change(비번).html">
+										<i class="feather-icon icon-settings me-2"></i>
+										비밀번호 변경
+									</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link " href="account-cancellation(계정 탈퇴).html">
+										<i class="feather-icon icon-settings me-2"></i>
+										계정 탈퇴
 									</a>
 								</li>
 								<!-- nav item -->
@@ -1066,11 +1087,20 @@
 											<!-- input -->
 											<div class="mb-3">
 												<label class="form-label">이름</label>
-												<input type="text" class="form-control" placeholder="이름" />
+												<input type="text" class="form-control" placeholder="이름" disabled>
 											</div>
 											<div class="mb-3">
+												<label class="form-label">성별</label>
+												<input type="text" class="form-control" placeholder="성별" disabled>
+											</div>
+											
+											<div class="mb-3">
 												<label class="form-label">아이디</label>
-												<input type="text" class="form-control" placeholder="아이디" />
+												<input type="text" class="form-control" disabled placeholder="아이디" />
+											</div>
+											<div class="mb-3">
+												<label class="form-label">생년월일</label>
+												<input type="date" class="form-control" disabled placeholder="생년월일" />
 											</div>
 											<!-- input -->
 											<div class="mb-3">
@@ -1102,41 +1132,8 @@
 									</div>
 								</div>
 							</div>
-							<hr class="my-10" />
-							<div class="pe-lg-14">
-								<!-- heading -->
-								<h5 class="mb-4">비밀번호 변경</h5>
-								<form class="row row-cols-1 row-cols-lg-2">
-									<!-- input -->
-									<div class="mb-3 col">
-										<label class="form-label">새 비밀번호</label>
-										<input type="password" class="form-control" placeholder="**********" />
-									</div>
-									<!-- input -->
-									<div class="mb-3 col">
-										<label class="form-label">비밀번호 확인</label>
-										<input type="password" class="form-control" placeholder="**********" />
-									</div>
-									<!-- input -->
-									<div class="col-12">
-										<!-- <p class="mb-4">
-											Can’t remember your current password?
-											<a href="#">Reset your password.</a>
-										</p> -->
-										<a href="#" class="btn btn-primary">비밀번호 변경</a>
-									</div>
-								</form>
-							</div>
-							<hr class="my-10" />
-							<div>
-								<!-- heading -->
-								<h5 class="mb-4">계정삭제</h5>
-								<p class="mb-2">계정을 삭제하시겠습니까?</p>
-								<!-- <p class="mb-5">This account contain 12 orders, Deleting your account will remove all
-									the order details associated with it.</p> -->
-								<!-- btn -->
-								<a href="#" class="btn btn-outline-danger">계정 삭제</a>
-							</div>
+							
+							
 						</div>
 					</div>
 				</div>
@@ -1164,9 +1161,21 @@
 				<!-- nav item -->
 
 				<li class="nav-item">
-					<a class="nav-link active" href="account-settings.html">
+					<a class="nav-link " href="account-settings(계정설정).html">
 						<i class="feather-icon icon-settings me-2"></i>
 						계정설정
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link " href="account- change(비번).html">
+						<i class="feather-icon icon-settings me-2"></i>
+						비밀번호 변경
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link " href="account-cancellation(계정 탈퇴).html">
+						<i class="feather-icon icon-settings me-2"></i>
+						계정 탈퇴
 					</a>
 				</li>
 				<!-- nav item -->
