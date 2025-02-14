@@ -27,10 +27,10 @@
     <nav class="navbar navbar-light py-2">
       <div class="container justify-content-center justify-content-lg-between">
         <a class="navbar-brand" href="../index.html">
-          <img src="../assets/images/logo/freshcart-logo.svg" alt="" class="d-inline-block align-text-top">
+          <img src="../assets/images/logo/ball.png" width="20" alt="" class="d-inline-block align-text-top"><strong>&nbsp;Now Futsal</strong>
         </a>
         <span class="navbar-text">
-          Already have an account? <a href="../pages/signin.html">Sign in</a>
+          이미 계정이 있나요? <a href="../pages/signin.html" style="color: green;">로그인</a>
         </span>
       </div>
     </nav>
@@ -47,59 +47,111 @@
         <div class="row justify-content-center align-items-center">
           <div class="col-12 col-md-6 col-lg-4 order-lg-1 order-2">
             <!-- img -->
-            <img src="../assets/images/svg-graphics/signup-g.svg" alt="" class="img-fluid" />
+            <img src="../assets/images/svg-graphics/free-icon-shoot-3333680.png" alt="" class="img-fluid" />
           </div>
           <!-- col -->
           <div class="col-12 col-md-6 offset-lg-1 col-lg-4 order-lg-2 order-1">
             <div class="mb-lg-9 mb-5">
-              <h1 class="mb-1 h2 fw-bold">Get Start Shopping</h1>
-              <p>Welcome to FreshCart! Enter your email to get started.</p>
+              <h1 class="mb-1 h2 fw-bold">가입하기</h1>
+              <p>Now Futsal에 오신 것을 환영합니다! 시작하려면 이메일을 입력하세요</p>
             </div>
             <!-- form -->
             <form class="needs-validation" novalidate>
               <div class="row g-3">
                 <!-- col -->
-                <div class="col">
+                <div class="col-8">
                   <!-- input -->
-                  <label for="formSignupfname" class="form-label visually-hidden">First Name</label>
-                  <input type="text" class="form-control" id="formSignupfname" placeholder="First Name" required />
-                  <div class="invalid-feedback">Please enter first name.</div>
+                  <label for="formSignupfname" class="form-label visually-hidden">이름</label>
+                  <input type="text" class="form-control" id="formSignupfname" placeholder="이름" required />
+                  <div class="invalid-feedback">이름을 입력해주세요</div>
                 </div>
-                <div class="col">
+                <div class="col-4">
                   <!-- input -->
-                  <label for="formSignuplname" class="form-label visually-hidden">Last Name</label>
-                  <input type="text" class="form-control" id="formSignuplname" placeholder="First Name" required />
-                  <div class="invalid-feedback">Please enter last name.</div>
+                  <label for="gender" class="form-label visually-hidden">성별</label>
+                  <select type="" class="form-select" id="gender"  >
+                    <option selected disabled value="">성별</option>
+                    <option>남자</option>
+                    <option>여자</option>
+                    <option>기타</option>
+                  </select>
+
+                  <div class="invalid-feedback">성별을 선택해주세요
+                </div>
+                </div>
+                <div class="col-4">
+                  <!-- input -->
+                  <label for="newsagency" class="form-label visually-hidden">통신사</label>
+                  <select type="" class="form-select" id="newsagency"  >
+                    <option selected disabled value="">통신사</option>
+                    <option>KT</option>
+                    <option>SKT</option>
+                    <option>LG U+</option>
+                    <option>알뜰폰</option>
+                  </select>
+
+                  <div class="invalid-feedback">통신사를 선택해주세요
+                  </div>
+                </div>
+                <div class="col-8">
+                  <!-- input -->
+                  <label for="phonenumber" class="form-label visually-hidden">휴대폰</label>
+                  <input type="tel" class="form-control" id="phonenumber" placeholder="휴대폰" required />
+                  <div class="invalid-feedback">휴대폰 번호를 입력해주세요</div>
+                </div>
+                <div class="col-4">
+                  <!-- input -->
+                  <label for="newsagency" class="form-label visually-hidden">음력,양력</label>
+                  <select type="" class="form-select" id="newsagency"  >
+                    <option selected disabled value="">음력,양력 선택</option>
+                    <option>음력</option>
+                    <option>양력</option>
+                    
+                  </select>
+
+                  <div class="invalid-feedback">음력, 양력을 선택해주세요
+                  </div>
+                </div>
+                <div class="col-8">
+                  <!-- input -->
+                  <label for="dob" class="form-label visually-hidden">생년월일일</label>
+                  <input type="tel" class="form-control" id="dob" placeholder="yyyy/mm/dd" required />
+                  <div class="invalid-feedback">생년월일을 입력해주세요</div>
                 </div>
                 <div class="col-12">
                   <!-- input -->
-                  <label for="formSignupEmail" class="form-label visually-hidden">Email address</label>
-                  <input type="email" class="form-control" id="formSignupEmail" placeholder="Email" required />
-                  <div class="invalid-feedback">Please enter email.</div>
+                  <label for="formSignuplname" class="form-label visually-hidden">아이디</label>
+                  <input type="text" class="form-control" id="formSignuplname" placeholder="아이디" required />
+                  <div class="invalid-feedback">아이디를 입력해주세요</div>
+                </div>
+                <div class="col-12">
+                  <!-- input -->
+                  <label for="formSignupEmail" class="form-label visually-hidden">이메일</label>
+                  <input type="email" class="form-control" id="formSignupEmail" placeholder="이메일" required />
+                  <div class="invalid-feedback">이메일을 입력해주세요</div>
                 </div>
                 <div class="col-12">
                   <div class="password-field position-relative">
-                    <label for="formSignupPassword" class="form-label visually-hidden">Password</label>
+                    <label for="formSignupPassword" class="form-label visually-hidden">비밀번호</label>
                     <div class="password-field position-relative">
                       <input type="password" class="form-control fakePassword" id="formSignupPassword"
-                        placeholder="*****" required />
+                        placeholder="비밀번호" required />
                       <span><i class="bi bi-eye-slash passwordToggler"></i></span>
-                      <div class="invalid-feedback">Please enter password.</div>
+                      <div class="invalid-feedback">비밀번호를 입력해주세요</div>
                     </div>
                   </div>
                 </div>
                 <!-- btn -->
-                <div class="col-12 d-grid"><button type="submit" class="btn btn-primary">Register</button></div>
+                <div class="col-12 d-grid"><button type="submit" class="btn btn-primary">가입하기</button></div>
 
                 <!-- text -->
-                <p>
+                <!-- <p>
                   <small>
                     By continuing, you agree to our
                     <a href="#!">Terms of Service</a>
                     &
                     <a href="#!">Privacy Policy</a>
                   </small>
-                </p>
+                </p> -->
               </div>
             </form>
           </div>
@@ -113,88 +165,8 @@
   <footer class="footer">
     <div class="container">
       <div class="row g-4 py-4">
-        <div class="col-12 col-md-12 col-lg-4">
-          <h6 class="mb-4">Categories</h6>
-          <div class="row">
-            <div class="col-6">
-              <!-- list -->
-              <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="#!" class="nav-link">Vegetables & Fruits</a></li>
-                <li class="nav-item mb-2"><a href="#!" class="nav-link"> Breakfast & instant food</a></li>
-                <li class="nav-item mb-2"><a href="#!" class="nav-link"> Bakery & Biscuits</a></li>
-                <li class="nav-item mb-2"><a href="#!" class="nav-link">Atta, rice & dal</a></li>
-                <li class="nav-item mb-2"><a href="#!" class="nav-link">Sauces & spreads</a></li>
-                <li class="nav-item mb-2"><a href="#!" class="nav-link">Organic & gourmet</a></li>
-                <li class="nav-item mb-2"><a href="#!" class="nav-link"> Baby care</a></li>
-                <li class="nav-item mb-2"><a href="#!" class="nav-link">Cleaning essentials</a></li>
-                <li class="nav-item mb-2"><a href="#!" class="nav-link">Personal care</a></li>
-              </ul>
-            </div>
-            <div class="col-6">
-              <!-- list -->
-              <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="#!" class="nav-link">Dairy, bread & eggs</a></li>
-                <li class="nav-item mb-2"><a href="#!" class="nav-link"> Cold drinks & juices</a></li>
-                <li class="nav-item mb-2"><a href="#!" class="nav-link"> Tea, coffee & drinks</a></li>
-                <li class="nav-item mb-2"><a href="#!" class="nav-link">Masala, oil & more</a></li>
-                <li class="nav-item mb-2"><a href="#!" class="nav-link">Chicken, meat & fish</a></li>
-                <li class="nav-item mb-2"><a href="#!" class="nav-link">Paan corner</a></li>
-                <li class="nav-item mb-2"><a href="#!" class="nav-link"> Pharma & wellness</a></li>
-                <li class="nav-item mb-2"><a href="#!" class="nav-link">Home & office</a></li>
-                <li class="nav-item mb-2"><a href="#!" class="nav-link">Pet care</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-12 col-lg-8">
-          <div class="row g-4">
-            <div class="col-6 col-sm-6 col-md-3">
-              <h6 class="mb-4">Get to know us</h6>
-              <!-- list -->
-              <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="#!" class="nav-link">Company</a></li>
-                <li class="nav-item mb-2"><a href="#!" class="nav-link">About</a></li>
-                <li class="nav-item mb-2"><a href="#1" class="nav-link">Blog</a></li>
-                <li class="nav-item mb-2"><a href="#!" class="nav-link">Help Center</a></li>
-                <li class="nav-item mb-2"><a href="#!" class="nav-link">Our Value</a></li>
-              </ul>
-            </div>
-            <div class="col-6 col-sm-6 col-md-3">
-              <h6 class="mb-4">For Consumers</h6>
-              <ul class="nav flex-column">
-                <!-- list -->
-                <li class="nav-item mb-2"><a href="#!" class="nav-link">Payments</a></li>
-                <li class="nav-item mb-2"><a href="#!" class="nav-link">Shipping</a></li>
-                <li class="nav-item mb-2"><a href="#!" class="nav-link">Product Returns</a></li>
-                <li class="nav-item mb-2"><a href="#!" class="nav-link">FAQ</a></li>
-                <li class="nav-item mb-2"><a href="../pages/shop-checkout.html" class="nav-link">Shop Checkout</a></li>
-              </ul>
-            </div>
-            <div class="col-6 col-sm-6 col-md-3">
-              <h6 class="mb-4">Become a Shopper</h6>
-              <ul class="nav flex-column">
-                <!-- list -->
-                <li class="nav-item mb-2"><a href="#!" class="nav-link">Shopper Opportunities</a></li>
-                <li class="nav-item mb-2"><a href="#!" class="nav-link">Become a Shopper</a></li>
-                <li class="nav-item mb-2"><a href="#!" class="nav-link">Earnings</a></li>
-                <li class="nav-item mb-2"><a href="#!" class="nav-link">Ideas & Guides</a></li>
-                <li class="nav-item mb-2"><a href="#!" class="nav-link">New Retailers</a></li>
-              </ul>
-            </div>
-            <div class="col-6 col-sm-6 col-md-3">
-              <h6 class="mb-4">Freshcart programs</h6>
-              <ul class="nav flex-column">
-                <!-- list -->
-                <li class="nav-item mb-2"><a href="#!" class="nav-link">Freshcart programs</a></li>
-                <li class="nav-item mb-2"><a href="#!" class="nav-link">Gift Cards</a></li>
-                <li class="nav-item mb-2"><a href="#!" class="nav-link">Promos & Coupons</a></li>
-                <li class="nav-item mb-2"><a href="#!" class="nav-link">Freshcart Ads</a></li>
-                <li class="nav-item mb-2"><a href="#!" class="nav-link">Careers</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
+        
+        
       <div class="border-top py-4">
         <div class="row align-items-center">
           <div class="col-lg-5 text-lg-start text-center mb-2 mb-lg-0">
