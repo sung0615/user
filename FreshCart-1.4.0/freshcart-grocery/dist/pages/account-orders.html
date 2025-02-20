@@ -245,7 +245,7 @@
 									
 								</li>
 								<li class="nav-item  w-100 w-lg-auto">
-									<a class="nav-link toggle" href="#" role="button" 
+									<a class="nav-link toggle" href="./social-match.html" role="button" 
 										aria-expanded="false">소셜 매치</a>
 									
 								</li>
@@ -1084,6 +1084,7 @@
 								</a>
 							</div>
 						</div>
+						
 						<div class="py-6 p-md-6 p-lg-10">
 							<!-- heading -->
 							<h2 class="mb-6">소셜매치 내역</h2>
@@ -1094,13 +1095,14 @@
 									<!-- Table Head -->
 									<thead class="bg-light">
 										<tr>
-											<th><input class="form-check-input" type="checkbox" id="cbx_chkAll"></th>
+											<th><input class="form-check-input" type="checkbox" id="cbx_chkAll1"></th>
 											<th>풋살장</th>
 											<th>주소</th>
 											<th>매칭 팀</th>
+											<th>내 팀</th>
 											<th>예약 날짜</th>
 											<th>예약 시간</th>
-											<th>가격</th>
+											
 											
 										</tr>
 									</thead>
@@ -1108,7 +1110,7 @@
 										<!-- Table body -->
 										<tr>
 											<td>
-												<input class="form-check-input" type="checkbox" name="chk">
+												<input class="form-check-input" type="checkbox" name="chk1">
 											</td>
 											<td class="align-middle border-top-0">
 												<a href="#" class="fw-semibold text-inherit">
@@ -1123,9 +1125,10 @@
 												
 											</td>
 											<td>강북 FD</td>
+											<td>성북 FD</td>
 											<td class="align-middle border-top-0">2025-02-12</td>
 											<td class="align-middle border-top-0">오후06:00 ~ 오후08:00</td>
-											<td class="align-middle border-top-0">120,000 원</td>
+											
 											
 										</tr>
 										
@@ -1351,6 +1354,16 @@
 		document.addEventListener("DOMContentLoaded", function () {
 			const checkAll = document.getElementById("cbx_chkAll");
 			const checkboxes = document.querySelectorAll('input[name="chk"]');
+		
+			checkAll.addEventListener("change", function () {
+				checkboxes.forEach(chk => {
+					chk.checked = checkAll.checked;
+				});
+			});
+		});
+		document.addEventListener("DOMContentLoaded", function () {
+			const checkAll = document.getElementById("cbx_chkAll1");
+			const checkboxes = document.querySelectorAll('input[name="chk1"]');
 		
 			checkAll.addEventListener("change", function () {
 				checkboxes.forEach(chk => {
