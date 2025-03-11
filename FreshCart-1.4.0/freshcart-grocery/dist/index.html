@@ -1233,75 +1233,7 @@
 					
 		</section>
 
-		<section class="my-lg-14 my-8">
-			<div class="container">
-				<div class="row">
-					<div class="col-12 mb-6">
-						<div id="map"></div>
-
-					</div>
-				</div>
-			</div>
-		</section>
-		<script>
-			var mapContainer = document.getElementById('map');
-	
-			var mapOption = { 
-				center: new kakao.maps.LatLng(37.7, 127.04), // 전체 지역 중심 (중간 지점)
-				level: 10 // 확대 레벨 (높을수록 넓게 보기)
-			};
-	
-			var map = new kakao.maps.Map(mapContainer, mapOption); 
-			
-			// 공 모양 마커 이미지 설정
-			var ballMarkerImage = new kakao.maps.MarkerImage(
-            "https://upload.wikimedia.org/wikipedia/commons/e/ec/Football_%28soccer_ball%29.svg", // 축구공 이미지
-            new kakao.maps.Size(40, 40), // 마커 크기 조절
-            { offset: new kakao.maps.Point(20, 40) } // 중심 위치 조정
-        );
-			
-			// 마커 정보 (주소별 좌표)
-			var positions = [
-				{
-					title: "의정부 창포원로 67",
-					latlng: new kakao.maps.LatLng(37.732438, 127.045318)
-				},
-				{
-					title: "도봉구 방학동 553-2",
-					latlng: new kakao.maps.LatLng(37.6671474, 127.0441096)
-				},
-				{
-					title: "성북구 서경로 118",
-					latlng: new kakao.maps.LatLng(37.614385, 127.012957)
-				},
-				{
-					title: "의정부 호암로 95",
-					latlng: new kakao.maps.LatLng(37.739719, 127.048553)
-				}
-			];
-	
-			// 마커 생성 및 지도에 표시
-			for (var i = 0; i < positions.length; i++) {
-				var marker = new kakao.maps.Marker({
-					map: map,
-					position: positions[i].latlng
-				});
-	
-				// 마커 클릭 시 정보창 표시
-				var infowindow = new kakao.maps.InfoWindow({
-					content: `<div style="padding:5px;font-size:14px;">${positions[i].title}</div>`
-				});
-	
-				kakao.maps.event.addListener(marker, 'click', makeClickListener(map, marker, infowindow));
-			}
-	
-			// 클릭 시 정보창 표시하는 함수
-			function makeClickListener(map, marker, infowindow) {
-				return function() {
-					infowindow.open(map, marker);
-				};
-			}
-		</script>
+		
 	
 
 
